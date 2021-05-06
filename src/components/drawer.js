@@ -25,9 +25,9 @@ export default function Drawer({
         onClose={toggleHandler}
         className={`drawer ${
           className || ""
-        }`.trim()} /*trim is used to avoid error because it often appends  */
+        }`.trim()} /*trim is used to avoid issues because it often appends  */
         width={width}
-        placement={placement}
+        placement={placement} /* where to place the drawer */
         handler={false}
         level={null}
         duration={"0.4s"}
@@ -41,9 +41,9 @@ export default function Drawer({
       </RcDrawer>
       <Box
         className="drawer__handler"
-        styel={{ display: "inline-block" }}
+        style={{ display: "inline-block" }}
         onClick={toggleHandler}>
-           
+          {drawerHandler}            
         </Box>
     </Fragment>
   );
