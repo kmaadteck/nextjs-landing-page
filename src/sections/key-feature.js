@@ -2,11 +2,12 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
+import FeatureCardColumn from "components/feature-card-column";
 import Performance from 'assets/key-feature/performance.svg';
 import Partnership from 'assets/key-feature/partnership.svg';
 import Subscription from 'assets/key-feature/subscription.svg';
 import Support from 'assets/key-feature/support.svg';
+
 
 const data = [
   {
@@ -45,7 +46,25 @@ const data = [
 
 export default function KeyFeature() {
   return (
-   <h1>Key Feature</h1>
+   <section sx={{ variant: 'section.keyFeature'}} id="feature" >
+     <Container>
+       <SectionHeader
+       slogan="What the fonction"
+       title="Meet the feature of our product"       
+       /> 
+       <Grid  sx={styles.grid}>
+         {data.map((item) => (
+           <FeatureCardColumn
+           key={item.id}
+           src={item.imgSrc}
+           alt={item.altText}
+           title={item.title} 
+           text={item.text}
+           />
+         ))}
+         </Grid>      
+     </Container>
+  </section>
   );
 }
 
