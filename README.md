@@ -21,6 +21,11 @@ Section: PACKAGE =>
 + section/Package.js
 ++++ ==> components|price-card.js
     +++ => component|list.js
+    +++ => component|buttonGroup.js
 
-    stop: 01:51:00
-    setup buttonGroup:
+Section: TEAM =>
+start by:
+Section/team-section.js
+++++ => components/TeamCard.js
+
+    
