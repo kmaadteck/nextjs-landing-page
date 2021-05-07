@@ -28,4 +28,8 @@ start by:
 Section/team-section.js
 ++++ => components/TeamCard.js
 
+Section: TESTIMONIAL =>
+start by:
+Section/Testimonial.js
+++++ => component/Rating.js
     
