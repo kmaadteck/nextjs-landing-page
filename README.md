@@ -12,7 +12,15 @@ npm run dev
 
 
 Section: FEATURE & CORE FEATURE =>
-1er: start by:
-section/Feature 
-    ==>> components|Header|feature-card
+3me: start by:
++ section/Feature.js 
+++++   ==>> components|Header|feature-card.js
 
+Section: PACKAGE =>
+4eme start by :
++ section/Package.js
+++++ ==> components|price-card.js
+    +++ => component|list.js
+
+    stop: 01:51:00
+    setup buttonGroup:
