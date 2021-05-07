@@ -32,4 +32,7 @@ Section: TESTIMONIAL =>
 start by:
 Section/Testimonial.js
 ++++ => component/Rating.js
-    
+
+Component FOOTER
+start by:
++++ => components/Footer.js
